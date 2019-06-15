@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('hi|祝你|生日快乐|happy birthday|#rectangle|#countdown 3||');
+      S.UI.simulate('Rain|祝你|生日快乐|happy birthday|#rectangle|#countdown 3||');
     }
 
     S.Drawing.loop(function () {
@@ -44,7 +44,7 @@ S.Drawing = (function () {
                      window.oRequestAnimationFrame      ||
                      window.msRequestAnimationFrame     ||
                      function(callback) {
-                       window.setTimeout(callback, 1000 / 60);
+                       window.setTimeout(callback, 1000 );
                      };
 
   return {
